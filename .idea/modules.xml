@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Tangito.iml" filepath="$PROJECT_DIR$/.idea/Tangito.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Delivery_App.iml" filepath="$PROJECT_DIR$/.idea/modules/Delivery_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Delivery_App.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Delivery_App.app.iml" />
     </modules>
   </component>
 </project>
