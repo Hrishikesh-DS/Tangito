@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_frag"
+    app:startDestination="@id/sendButton2">
+
+    <fragment
+        android:id="@+id/sendButton2"
+        android:name="com.capgemini.map.sendButton"
+        android:label="fragment_send_button"
+        tools:layout="@layout/fragment_send_button" >
+        <action
+            android:id="@+id/action_sendButton2_to_mapsFragment2"
+            app:destination="@id/mapsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment2"
+        android:name="com.capgemini.map.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>
