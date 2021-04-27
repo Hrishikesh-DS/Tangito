@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/register_navigation"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/sendButton">
 
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.capgemini.deliveryapp.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
+        tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -18,9 +18,26 @@
         android:id="@+id/loginFragment"
         android:name="com.capgemini.deliveryapp.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendButton"
+        android:name="com.capgemini.deliveryapp.sendButton"
+        android:label="fragment_send_button"
+        tools:layout="@layout/fragment_send_button">
+        <action
+            android:id="@+id/action_sendButton_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.capgemini.deliveryapp.MapsFragment"
+        android:label="MapsFragment">
+        <action
+            android:id="@+id/action_mapsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 </navigation>
